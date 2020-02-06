@@ -1,1 +1,1 @@
-from fastq import Fastq
+from pyscr.fastq import Fastq
