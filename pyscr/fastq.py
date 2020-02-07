@@ -44,7 +44,7 @@ class Fastq:
           scala_ver = b''
         if b'1.8.0_232' not in java_ver:
           java_8_install = ['apt-get', '--quiet', 'install',
-                            '-y', 'openjdk-8-jdk-headless']
+                            '-y', 'openjdk-8-jdk']
           java_set_alt = ['update-alternatives', '--set', 'java',
                           '/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java' ]
           check_call(java_8_install, stdout=open(os.devnull, 'wb'),
